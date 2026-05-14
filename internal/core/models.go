@@ -1,4 +1,3 @@
-// Package core defines the domain models and interfaces for the application.
 package core
 
 // OutputMode represents the desired sorting behavior for the output.

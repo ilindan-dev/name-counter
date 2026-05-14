@@ -60,7 +60,7 @@ func (c *batchCounter) Count(r io.Reader) (map[string]int, error) {
 	}
 
 	if err := scanner.Err(); err != nil {
-		return nil, fmt.Errorf("failed to read input: %w", err)
+		return nil, fmt.Errorf("%w: %w", core.ErrReadInput, err)
 	}
 
 	return counts, nil
